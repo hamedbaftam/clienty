@@ -14,12 +14,13 @@ type Board struct {
 	ShortURL       string `json:"shortUrl"`
 }
 
-func (m *Member) GetBoards(extraArgs ...Arguments) (boards []*Board, err error) {
-	args := flattenArguments(extraArgs)
-	path := fmt.Sprintf("members/%s/boards", m.ID)
-	err = m.client.Get(path, args, &boards)
-	for i := range boards {
-		fmt.Println(i)
-	}
+func (m *Member) GetBoards() (err error) {
+	//path := fmt.Sprintf("members/%s/boards", m.ID)
+	//err = m.client.Get(path, args, &boards)
+	fmt.Println("Erfg")
+	//for i := range boards {
+	//	fmt.Println(i)
+	//}
+	//return
 	return
 }
