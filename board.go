@@ -17,7 +17,7 @@ type Board struct {
 func (m *Member) GetBoards() (err error) {
 	//path := fmt.Sprintf("members/%s/boards", m.ID)
 	//err = m.client.Get(path, args, &boards)
-	fmt.Println("Erfg")
+	fmt.Println(m.ID)
 	//for i := range boards {
 	//	fmt.Println(i)
 	//}
